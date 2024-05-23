@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+:root {
+  --font-style: "Nunito Sans", sans-serif;
+  --cor-fonte: #be8040;
+  --cor-font-leve: #dac3a8;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-style);
+  padding: 0;
+  margin: 0;
+}
+
+.showcase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-blend-mode: color;
+  background: url("../imagens/fundologin.jpg") center/cover rgb(0, 0, 0, 0.7);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #242026;
+  box-shadow: 0 15px 25px rgba(224, 195, 134, 0.8);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: var(--cor-fonte);
+  text-align: center;
+}
+
+.login-box .user-box input {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: var(--cor-fonte);
+  margin-bottom: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #be8040;
+  background: transparent;
+  outline: none;
+}
+
+.login-box .user-box label {
+  position: relative;
+  left: 0;
+  top: -60px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--cor-fonte);
+  pointer-events: none;
+  transition: 0.5s;
+}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -85px;
+  left: 0;
+  color: var(--cor-fonte);
+  font-size: 15px;
+}
+
+#submit {
+  background-color: #242026;
+  padding: 10px 20px;
+  color: var(--cor-font-leve);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+  border: 1px solid var(--cor-fonte);
+  margin: auto;
+}
+
+#submit:hover {
+  background: var(--cor-fonte);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--cor-fonte), 0 0 25px var(--cor-fonte), 0 0 50px var(--cor-fonte),
+    0 0 100px var(--cor-fonte);
+}
+
+.button-form {
+  display: flex;
+  flex-direction: row;
+}
+#register {
+  padding-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--cor-font-leve);
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+#register a {
+  margin: auto;
+  color: var(--cor-fonte);
+  text-decoration: none;
+}

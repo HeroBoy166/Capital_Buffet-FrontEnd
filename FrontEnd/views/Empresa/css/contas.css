@@ -1,0 +1,232 @@
+.table, .table1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.head, .row, .head1, .row1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.head1 *, .row1 * {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    border-right: 1px solid var(--c-border-table);
+    border-left: 1px solid var(--c-border-table);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.head *, .row *{
+    width: 22.5%;
+    min-height: fit-content;
+    min-width: fit-content;
+    height: 50px;
+    display: flex;
+    border-right: 1px solid var(--c-border-table);
+    border-left: 1px solid var(--c-border-table);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.head, .head1{
+    position: sticky;
+    top: 0px;
+    background-color: var(--c-background-table);
+}
+.row:nth-child(even), .row1:nth-child(even){
+    background-color: white;
+}
+
+.row:nth-child(odd), .row1:nth-child(odd){
+    background-color: var(--c-background-table);
+}
+
+.row span, .row1 span{
+    max-height: 50px;
+    min-height: fit-content;
+}
+
+.row span:hover, .row1 span:hover{
+    border: 1px solid var(--c-border-table);
+    border-radius: 30px;
+    background-color: var(--c-accent-primary);
+    color: white;
+}
+.last{
+    width: 10%;
+}
+.contatos{
+    max-width: 10%;
+    border-right: 0px;
+}
+
+.contatos button, .last button{
+    width: 90%;
+    height: 80%;
+    border: 1px solid var(--c-accent-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.create p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button .material-symbols-outlined{
+    width: 90%;
+    border: 0ch;
+}
+
+.first{
+    border-left: 0px;
+}
+
+*{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display:none;
+}
+
+.white{
+    color: white
+}
+
+.off{
+    display: none;
+}
+
+.s{
+    overflow: hidden;
+    display:flex;
+    position: absolute;
+    animation-name: down;
+    animation-duration: 0.1s;
+}
+.ss{
+    display: none;
+}
+
+.form{padding-bottom: 0px;}
+
+@keyframes down {
+    0%{top: -100%} 
+    1%{top: -99%} 
+    2%{top: -98%} 
+    3%{top: -97%} 
+    4%{top: -96%} 
+    5%{top: -95%} 
+    6%{top: -94%} 
+    7%{top: -93%} 
+    8%{top: -92%} 
+    9%{top: -91%} 
+    10%{top: -90%} 
+    11%{top: -89%} 
+    12%{top: -88%} 
+    13%{top: -87%} 
+    14%{top: -86%} 
+    15%{top: -85%} 
+    16%{top: -84%} 
+    17%{top: -83%} 
+    18%{top: -82%} 
+    19%{top: -81%} 
+    20%{top: -80%} 
+    21%{top: -79%} 
+    22%{top: -78%} 
+    23%{top: -77%} 
+    24%{top: -76%} 
+    25%{top: -75%} 
+    26%{top: -74%} 
+    27%{top: -73%} 
+    28%{top: -72%} 
+    29%{top: -71%} 
+    30%{top: -70%} 
+    31%{top: -69%} 
+    32%{top: -68%} 
+    33%{top: -67%} 
+    34%{top: -66%} 
+    35%{top: -65%} 
+    36%{top: -64%} 
+    37%{top: -63%} 
+    38%{top: -62%} 
+    39%{top: -61%} 
+    40%{top: -60%} 
+    41%{top: -59%} 
+    42%{top: -58%} 
+    43%{top: -57%} 
+    44%{top: -56%} 
+    45%{top: -55%} 
+    46%{top: -54%} 
+    47%{top: -53%} 
+    48%{top: -52%} 
+    49%{top: -51%} 
+    50%{top: -50%} 
+    51%{top: -49%} 
+    52%{top: -48%} 
+    53%{top: -47%} 
+    54%{top: -46%} 
+    55%{top: -45%} 
+    56%{top: -44%} 
+    57%{top: -43%} 
+    58%{top: -42%} 
+    59%{top: -41%} 
+    60%{top: -40%} 
+    61%{top: -39%} 
+    62%{top: -38%} 
+    63%{top: -37%} 
+    64%{top: -36%} 
+    65%{top: -35%} 
+    66%{top: -34%} 
+    67%{top: -33%} 
+    68%{top: -32%} 
+    69%{top: -31%} 
+    70%{top: -30%} 
+    71%{top: -29%} 
+    72%{top: -28%} 
+    73%{top: -27%} 
+    74%{top: -26%} 
+    75%{top: -25%} 
+    76%{top: -24%} 
+    77%{top: -23%} 
+    78%{top: -22%} 
+    79%{top: -21%} 
+    80%{top: -20%} 
+    81%{top: -19%} 
+    82%{top: -18%} 
+    83%{top: -17%} 
+    84%{top: -16%} 
+    85%{top: -15%} 
+    86%{top: -14%} 
+    87%{top: -13%} 
+    88%{top: -12%} 
+    89%{top: -11%} 
+    90%{top: -10%} 
+    91%{top: -9%} 
+    92%{top: -8%} 
+    93%{top: -7%} 
+    94%{top: -6%} 
+    95%{top: -5%} 
+    96%{top: -4%} 
+    97%{top: -3%} 
+    98%{top: -2%} 
+    99%{top: -1%} 
+    100%{top: -0%} 
+}

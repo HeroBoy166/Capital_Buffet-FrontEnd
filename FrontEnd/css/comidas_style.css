@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css?family=Alex+Brush|Overpass+Mono:600,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+body {
+  overflow-x: hidden;
+}
+
+
+
+/*
+  SECTIONS
+*/
+/*
+  CLASSES
+*/
+.custom-font {
+  font-family: "Alex Brush", cursive;
+  color: #be8040;
+  font-size: 75px;
+  line-height: 0;
+}
+
+.add-padding {
+  padding: 25px;
+}
+
+.center-text {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  color: #4d4d4d;
+}
+.center-text h2 {
+  margin-top: 25px;
+  line-height: 0;
+}
+.center-text p {
+  margin-top: 0;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.5;
+
+}
+.center-text a {
+  font-family: "PT Sans", sans-serif;
+  color: #be8040;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: solid 2px #be8040;
+}
+
+.add-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-flex .stuffed-cherries {
+  background: url("https://s-media-cache-ak0.pinimg.com/736x/61/b1/98/61b19844448b2bad5c78e9a2c6347986.jpg") no-repeat center center;
+  background-size: cover;
+  height: 315px;
+  width: 320px;
+}
+
+.center-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-h1 {
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+.custom-h1 span {
+  letter-spacing: 0;
+}
+
+/*
+  TASTEFUL RECIPES SECTION
+*/
+.bread-background {
+  background: black url("http://www.performerprosites.com/development/clients/showpalace/wp-content/uploads/2014/05/tasteful-recipies-dinner-theatre.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+/*
+  MENU SECTION
+*/
+.menu {
+  padding: 30px;
+}
+.menu-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.menu-images img {
+  width: 100%;
+}
+
+/*
+  THE PERFECT BLEND SECTION
+*/
+.cake-background {
+  background: black url("http://www.rustiquerichmond.co.uk/wp-content/uploads/2014/06/desert.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+/*
+  CULINARY DELIGHT SECTION
+*/
+.reservation-section {
+  margin-bottom: 40px;
+}
+.reservation-section div:first-child {
+  flex: 1;
+}
+.reservation-section div:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  flex: 1;
+}
+.reservation-section div:last-child img {
+  margin: auto;
+  width: 85%;
+}
+
+/*
+  FOOTER
+*/
+footer {
+  margin: 0;
+  position: relative;
+  background: #141414;
+  color: lightgray;
+}
+footer button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+  border-radius: 50%;
+  margin-top: 0;
+}
+footer h4 {
+  margin-bottom: 0;
+}
+footer h5 {
+  line-height: 1.5;
+}
+footer .restaurant-info {
+  padding: 35px 40px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .copyright {
+  background: #232323;
+  color: #969696;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .copyright span {
+  border-bottom: solid 1px;
+}
+
+/*
+  MEDIA QUERIES
+*/
+@media screen and (max-width: 425px) {
+  header,
+.bread-background,
+.cake-background {
+    background-attachment: scroll;
+  }
+}
+@media (min-width: 768px) {
+  footer .restaurant-info {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 769px) {
+  .add-padding {
+    padding: 50px 0;
+  }
+
+  .add-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+  .add-flex div:first-child {
+    flex: 1;
+    padding: 0 50px;
+  }
+  .add-flex div:last-child {
+    min-width: 400px;
+    margin: 50px;
+  }
+
+  .menu-images {
+    flex: 1;
+  }
+  .menu div:last-child {
+    flex: 1;
+  }
+
+  /*
+    FOOTER
+  */
+  footer .restaurant-info {
+    padding: 20px 80px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .restaurant-info .locations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .restaurant-info .locations h4 {
+    flex: 1 0 100%;
+  }
+  footer .restaurant-info .hours {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .restaurant-info .hours h4 {
+    flex: 1 0 100%;
+  }
+  footer .copyright {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+/* ANIMATIONS */
+#asterisk {
+  opacity: 0;
+  transform-origin: 50% 4%;
+  -webkit-animation: spin 0.5s forwards;
+          animation: spin 0.5s forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#asterisk::before,
+#asterisk::after {
+  transform-origin: center center;
+  -webkit-animation: grow 0.5s forwards;
+          animation: grow 0.5s forwards;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.center p {
+  transform: translateY(-40px);
+  opacity: 0;
+  -webkit-animation: fadeDown 0.9s forwards;
+          animation: fadeDown 0.9s forwards;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.center h2 {
+  transform: scale(2);
+  opacity: 0;
+  -webkit-animation: fade 0.5s forwards;
+          animation: fade 0.5s forwards;
+}
+
+.center h1 {
+  transform: translateY(40px);
+  opacity: 0;
+  -webkit-animation: fadeUp 0.5s forwards;
+          animation: fadeUp 0.5s forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes grow {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    width: 40%;
+  }
+}
+@keyframes grow {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    width: 40%;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
